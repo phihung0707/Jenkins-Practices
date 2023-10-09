@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . docker build --pull --rm -f "backend/Dockerfile" -t src:latest "backend"
+      run: docker build . --pull --rm -f "backend/Dockerfile" -t src:latest "backend"
